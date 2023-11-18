@@ -1,3 +1,4 @@
+@media (max-width: 480px) {}
 body {
     margin: 0px;
     /* background-color: ; */
@@ -10,7 +11,6 @@ body {
 .header{
     width: 100%;
     background-image: url(/assets/background_orance3.jpg) ;
-
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
@@ -30,7 +30,6 @@ body {
     border-width: 1px;
     border-style: solid;
     border-radius: 10px;
-    
     padding: 2px 20px 2px 20px;
     background-color: black;
     margin-bottom: 1%;
@@ -52,7 +51,6 @@ body {
 }
 .headerElement{
     border-radius: 5px;
-    /* background-color: white; */
     margin-bottom: 1%;
     color:black;
     flex-grow: 1;
@@ -61,13 +59,8 @@ body {
     align-self:self-start;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    /* border-color: black;
-    border-width: 1px;
-    border-style: solid; */
     display: flex;
     flex-direction: row;
-    /* flex-wrap: nowrap; */
-    
 }
 .headerSubElement1{
 align-self: center;
@@ -78,22 +71,9 @@ align-self: center;
     flex-wrap: wrap;
     position: sticky;
     top: 0;
-    
-
-    /* border-color: black;
-    border-width: 1px;
-    border-style: solid; */
-
-    
-    
     background-color: navy;
-
-
 }
 .navElement{
-    /* border-color: black;
-    border-width: 1px;
-    border-style: solid; */
     border-radius: 15px;
     padding-left: 10px;
     padding-right: 10px;
@@ -114,21 +94,13 @@ align-self: center;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-
     border-color: black;
     border-width: 1px;
     border-style: solid;
     border-radius: 5px;
-
 }
 .aside{
-
-    border-color: black;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 5px;
-    margin: 2px;
-
+    flex-grow: 1;
 }
 .main{
     display: flex;
@@ -138,33 +110,49 @@ align-self: center;
     border-width: 1px;
     border-style: solid;
     border-radius: 5px;
+
+    max-width: 70%;
 }
 .section1{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+
 
     border-color: black;
     border-width: 1px;
     border-style: solid;
     border-radius: 5px;
-
-    margin: 2px;
+    
 }
 .section1Element{
 
-    border-color: black;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 5px;
-    margin: 2px;
+    flex-grow: 1;
+    max-width: 25%;
+
+}
+.fotofit{
+    object-fit:contain;
+    width:100%;
+    height:100%;
+}
+.foto{
+padding: 10% 10% 10% 10% ;
+}
+.text{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
 }
 .section2{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
 
-    margin: 2px;
 }
 .section2Element{
     border-color: black;
@@ -190,7 +178,28 @@ align-self: center;
     text-decoration: none;
     color: black;
 }
+@media (max-width: 768px) {
+    .aside{
+        overflow: hidden;
+        flex-grow: 0;
+    }
+    .main{
+        max-width: 100%;
+    }
 
-
-
+}
+@media (max-width: 480px) {
+    .section1Element{
+        flex-grow: 1;
+        max-width: 50%;
+    
+    }
+    .aside{
+        overflow: hidden;
+        flex-grow: 0;
+    }
+    .main{
+        max-width: 100%;
+    }
+}
 
