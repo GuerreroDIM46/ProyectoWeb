@@ -122,7 +122,10 @@ header{
     color: white;
 
 }
-
+.divlink{
+    text-decoration: none;
+    color: black;
+}
 
 
 
