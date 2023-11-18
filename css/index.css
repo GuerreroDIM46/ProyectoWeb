@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    /* background-color: ; */
 }
 .bodyContainer{
     display: flex;
@@ -8,11 +9,16 @@ body {
 }
 .header{
     width: 100%;
+    background-image: url(/assets/background_orance3.jpg) ;
 
     display: flex;
     flex-direction: row-reverse;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: flex-end;
+}
+.logofit{
+    height:100%;
+    float: left;
 }
 .objectfit{
     object-fit:contain;
@@ -24,13 +30,19 @@ body {
     border-width: 1px;
     border-style: solid;
     border-radius: 10px;
+    
     padding: 2px 20px 2px 20px;
-    background-color: white;
+    background-color: black;
     margin-bottom: 1%;
     margin-top: 1%;
-    color:black;
+    color:white;
+    text-decoration: solid;
     font-family: Arial, Helvetica, sans-serif;
 }
+.acceso:hover{
+    background-color: white;
+    color: black;
+}   
 .logo{
     width: 30px;
     height: 30px;
@@ -40,56 +52,63 @@ body {
 }
 .headerElement{
     border-radius: 5px;
-    background-color: white;
+    /* background-color: white; */
     margin-bottom: 1%;
-    color: white;
+    color:black;
     flex-grow: 1;
     height: 6em;
+    text-align: center;
+    align-self:self-start;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border-color: black;
+    border-width: 1px;
+    border-style: solid; */
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: nowrap; */
+    
+}
+.headerSubElement1{
+align-self: center;
 }
 .navContainer{
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     position: sticky;
     top: 0;
-    justify-content: space-between;
+    
 
-    border-color: black;
+    /* border-color: black;
     border-width: 1px;
-    border-style: solid;
+    border-style: solid; */
 
-    padding-left: 50%;
-    padding-right: 1%;
-    background-color: black;
+    
+    
+    background-color: navy;
 
 
 }
 .navElement{
-    border-color: black;
+    /* border-color: black;
     border-width: 1px;
-    border-style: solid;
-    border-radius: 5px;
-    background-color: black;
-    margin-bottom: 1%;
-    margin-top: 1%;
+    border-style: solid; */
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: navy;
+    margin: 2px 2px 2px 2px;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* text-decoration: solid; */
-
 }
-.navElement2{
+.navElement:hover{
     border-color: black;
     border-width: 1px;
     border-style: solid;
-    border-radius: 10px;
-    padding: 2px 20px 2px 20px;
-    background-color: white;
-    margin-bottom: 1%;
-    margin-top: 1%;
-    color:black;
-    font-family: Arial, Helvetica, sans-serif;
-    /* text-decoration: solid; */
-    
+    background-color: dodgerblue;
+    color: black;
 }
 .mainAsideContainer{
     display: flex;
