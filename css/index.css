@@ -15,15 +15,17 @@ header{
     border-color: black;
     border-width: 1px;
     border-style: solid;
-    position: fixed;
+
     width: 100%;
+    background-color: black;
 
 }
 .navContainer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* position: fixed; */
+    position: sticky;
+    top: 0;
     justify-content: space-between;
 
     border-color: black;
@@ -41,10 +43,27 @@ header{
     border-width: 1px;
     border-style: solid;
     border-radius: 5px;
-    background-color: aqua;
+    background-color: black;
     margin-bottom: 1%;
     margin-top: 1%;
+    color: white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* text-decoration: solid; */
 
+}
+.navElement2{
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 2px 20px 2px 20px;
+    background-color: white;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    color:black;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* text-decoration: solid; */
+    
 }
 .mainAsideContainer{
     display: flex;
