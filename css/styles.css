@@ -241,7 +241,7 @@ body{
 
 @media (max-width: 480px) {
     .article{
-        max-width: 49%;
+        max-width: 48%;
         box-sizing: border-box;
     }
     .aside{
