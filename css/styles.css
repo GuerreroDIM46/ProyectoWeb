@@ -136,7 +136,7 @@ body{
     align-content:stretch;
     justify-content: space-between;
 }
-.article{
+.article1{
 /* La puta clave */
     flex-grow: 1;
     max-width: 24%;
@@ -165,12 +165,78 @@ body{
     font-size: 1.2vw;
     text-align:center;
     align-self: center
+    
 }
 .foto{
     padding: 1vw 1vw 1vw 1vw;
     background-color: navy;
     border-radius: 10%;
 }
+.section2{
+    max-width: 60%;
+}
+.article2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.centrar{
+    display: flex;
+    flex-grow: 100%;
+    align-self: stretch
+    }
+.textarticle2{
+    align-self: center;
+    font-family: Helvetica;
+    font-size: 1.5vw;
+    text-align:center;
+
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.foto2{
+    padding: 1vw 1vw 1vw 1vw;
+    background-color: navy;
+    border-radius: 10%;
+    box-sizing: border-box;
+    width: 200%;
+}
+.section3{
+    max-width: 60%;
+    display: flex;
+}
+.article31{
+    flex-grow: 1;
+    max-width: 33%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.article32{
+    flex-grow: 1;
+    max-width: 66%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.textarticle3{
+    align-self: center;
+    font-family: Helvetica;
+    font-size: 1.2vw;
+    text-align:center;
+
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.foto3{
+    padding: 1vw 1vw 1vw 1vw;
+    background-color: navy;
+    border-radius: 10%;
+    box-sizing: border-box;
+    margin: 1vw 1vw 1vw 1vw;
+}
+
 
 .o1{order: 1;}
 .o2{order: 2;}
@@ -205,34 +271,80 @@ body{
     color: white;
 
 }
-
-
 @media (max-width: 768px) {
-    .main1{
+    .main1 {
         height: 29em;
     }
-    .aside{
+
+    .aside {
         flex-grow: 0;
     }
-    .section1{
+
+    .section1 {
         max-width: 100%;
     }
-    .article{
+
+    .section2 {
+        max-width: 100%;
+    }
+
+    .section3 {
+        max-width: 100%;
+    }
+
+    .article {
         max-width: 32%;
     }
-    .o1{order: 1;}
-    .o2{order: 2;}
-    .o3{order: 3;}
-    .o4{order: 4;}
-    .o5{order: 5;}
-    .o6{order: 6;}
-    .o7{order: 7;}
-    .o8{order: 8;}
-    .o9{order: 9;}
-    .textarticle{
-    font-size:3vw;
+
+    .o1 {
+        order: 1;
     }
-    .fin{
+
+    .o2 {
+        order: 2;
+    }
+
+    .o3 {
+        order: 3;
+    }
+
+    .o4 {
+        order: 4;
+    }
+
+    .o5 {
+        order: 5;
+    }
+
+    .o6 {
+        order: 6;
+    }
+
+    .o7 {
+        order: 7;
+    }
+
+    .o8 {
+        order: 8;
+    }
+
+    .o9 {
+        order: 9;
+    }
+
+    .textarticle {
+        font-size: 2.5vw;
+    }
+
+    .textarticle2 {
+        font-size: 2.5vw;
+    }
+
+    .textarticle3 {
+        font-size: 2.5vw;
+    }
+
+    .fin {
         flex-grow: 1;
         max-width: 100%;
         order: 10;
@@ -240,32 +352,79 @@ body{
 }
 
 @media (max-width: 480px) {
-    .article{
+    .article {
         max-width: 48%;
         box-sizing: border-box;
     }
-    .aside{
+
+    .aside {
         flex-grow: 0;
     }
-    .section1{
+
+    .section1 {
         max-width: 100%;
     }
-    .o1{order: 1;}
-    .o2{order: 2;}
-    .o3{order: 4;}
-    .o4{order: 3;}
-    .o5{order: 5;}
-    .o6{order: 6;}
-    .o7{order: 8;}
-    .o8{order: 7;}
-    .o9{order: 9;}
-    .textarticle{
-    font-size: 4vw;
+
+    .section2 {
+        max-width: 100%;
     }
-    .fin{
+
+    .section3 {
+        max-width: 100%;
+    }
+
+    .o1 {
+        order: 1;
+    }
+
+    .o2 {
+        order: 2;
+    }
+
+    .o3 {
+        order: 4;
+    }
+
+    .o4 {
+        order: 3;
+    }
+
+    .o5 {
+        order: 5;
+    }
+
+    .o6 {
+        order: 6;
+    }
+
+    .o7 {
+        order: 8;
+    }
+
+    .o8 {
+        order: 7;
+    }
+
+    .o9 {
+        order: 9;
+    }
+
+    .textarticle {
+        font-size: 3.5vw;
+    }
+
+    .textarticle2 {
+        font-size: 3.5vw;
+    }
+
+    .textarticle3 {
+        font-size: 2.4vw;
+    }
+
+    .fin {
         flex-grow: 1;
         max-width: 50%;
         order: 10;
-    
+
     }
 }
