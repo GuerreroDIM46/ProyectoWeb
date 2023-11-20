@@ -111,7 +111,7 @@ body{
     height: 50em;
     color: white;
     background-size: cover;
-    background-position-y: 90%;
+
 
 }
 .main2{
@@ -130,30 +130,36 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* border: solid;
-    border-radius: 3%;
-    border-color: navy; */
     padding: 2px 2px 2px 2px;
-    align-content:stretch;
     justify-content: space-between;
 }
 .article1{
 /* La puta clave */
     flex-grow: 1;
-    max-width: 24%;
+    max-width: 23%;
     display: flex;
     align-self: stretch;
-    box-sizing: border-box;
-    background-color: #D4BB47;
-    border-radius: 10%;
-    margin: 2px;
+    margin: 2px 2px 2px 2px;
 }
 .fin{
     flex-grow: 1;
     max-width: 75%;
     order: 10;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
+.bordeazul{
+    border: solid;
+    border-radius: 20px;
+    border-style: groove;
+    border-color: navy;
+}
+.bordeamarillo{
+    border: solid;
+    border-radius: 20px;
+    border-style: groove;
+    border-color: #D4BB47;
+}
+
 .fotofit{
     object-fit: cover;
     width:100%;
@@ -161,17 +167,18 @@ body{
     
 }
 .textarticle{
-    
+
+    align-self: center;
     font-family: Helvetica;
     font-size: 1.2vw;
-    text-align:center;
+    text-align: center;
     align-self: center
+    /* box-sizing: border-box; */
     
 }
 .foto{
     padding: 1vw 1vw 1vw 1vw;
-    background-color: navy;
-    border-radius: 10%;
+    margin: 2px 2px 2px 2px;
 }
 .section2{
     max-width: 60%;
@@ -243,6 +250,43 @@ body{
     box-sizing: border-box;
     margin: 1vw 1vw 1vw 1vw;
 }
+.section4{
+    max-width: 60%;
+}
+.section41{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    align-content: stretch;
+    
+}
+.textarticle4{
+    align-self: center;
+    font-family: Helvetica;
+    font-size: 1.2vw;
+    text-align: justify;
+    height: 20em;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-bottom: 10px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+.foto4{
+    padding: 1vw 1vw 1vw 1vw;
+    border-radius: 10%;
+    box-sizing: border-box;
+    margin: 1vw 1vw 1vw 1vw;
+    width: 100%;
+}
+.article41{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: 32%;
+    align-content: baseline ;
+}
 
 
 .o1{order: 1;}
@@ -254,17 +298,6 @@ body{
 .o7{order: 8;}
 .o8{order: 7;}
 .o9{order: 9;}
-
-
-
-
-
-
-
-
-
-
-
 
 .footer{
     bottom: 0;
@@ -298,46 +331,23 @@ body{
     .section3 {
         max-width: 100%;
     }
-
-    .article {
-        max-width: 32%;
+    .section4 {
+        max-width: 100%;
     }
 
-    .o1 {
-        order: 1;
+    .article1 {
+        max-width: 31%;
     }
 
-    .o2 {
-        order: 2;
-    }
-
-    .o3 {
-        order: 3;
-    }
-
-    .o4 {
-        order: 4;
-    }
-
-    .o5 {
-        order: 5;
-    }
-
-    .o6 {
-        order: 6;
-    }
-
-    .o7 {
-        order: 7;
-    }
-
-    .o8 {
-        order: 8;
-    }
-
-    .o9 {
-        order: 9;
-    }
+    .o1 {order: 1;}
+    .o2 {order: 2;}
+    .o3 {order: 3;}
+    .o4 {order: 4;}
+    .o5 {order: 5;}
+    .o6 {order: 6;}
+    .o7 {order: 7;}
+    .o8 {order: 8;}
+    .o9 {order: 9;}
 
     .textarticle {
         font-size: 2.5vw;
@@ -350,7 +360,9 @@ body{
     .textarticle3 {
         font-size: 2.5vw;
     }
-
+    .textarticle4 {
+        font-size: 2.5vw;
+    }
     .fin {
         flex-grow: 1;
         max-width: 100%;
@@ -359,7 +371,7 @@ body{
 }
 
 @media (max-width: 480px) {
-    .article {
+    .article1 {
         max-width: 48%;
         box-sizing: border-box;
     }
@@ -379,42 +391,19 @@ body{
     .section3 {
         max-width: 100%;
     }
-
-    .o1 {
-        order: 1;
+    .section4 {
+        max-width: 100%;
     }
 
-    .o2 {
-        order: 2;
-    }
-
-    .o3 {
-        order: 4;
-    }
-
-    .o4 {
-        order: 3;
-    }
-
-    .o5 {
-        order: 5;
-    }
-
-    .o6 {
-        order: 6;
-    }
-
-    .o7 {
-        order: 8;
-    }
-
-    .o8 {
-        order: 7;
-    }
-
-    .o9 {
-        order: 9;
-    }
+    .o1 {order: 1;}
+    .o2 {order: 2;}
+    .o3 {order: 4;}
+    .o4 {order: 3;}
+    .o5 {order: 5;}
+    .o6 {order: 6;}
+    .o7 {order: 8;}
+    .o8 {order: 7;}
+    .o9 {order: 9;}
 
     .textarticle {
         font-size: 3.5vw;
@@ -427,11 +416,16 @@ body{
     .textarticle3 {
         font-size: 2.4vw;
     }
+    .textarticle4 {
+        font-size: 2.4vw;
+    }
 
     .fin {
         flex-grow: 1;
         max-width: 50%;
         order: 10;
+        align-self: stretch;
+        justify-self:flex-end;
 
     }
 }
